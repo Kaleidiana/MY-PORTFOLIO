@@ -1,0 +1,184 @@
+<html>
+<!-- InstanceBegin template="/Templates/default.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Net Pay Calculator</title>
+    <!-- InstanceEndEditable -->
+    <!-- InstanceBeginEditable name="head" -->
+    <meta name="Keywords" content="Calculator, PAYE, NSSF, NHIF, Kenya">
+    <meta name="Description" content="Net Pay Calculator">
+    <script src="deducalc.js"></script>
+    <!-- InstanceEndEditable -->
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../menu/resp_menu.css" rel="stylesheet" type="text/css">
+    <link href="../menu/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../graphics/favicon.ico" rel="icon" type="image/x-icon">
+    <script src="../shared/menu.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!-- InstanceParam name="onload" type="text" value="initMenu();initHousing();getCookie()" -->
+    <!-- InstanceParam name="onunload" type="text" value="setCookie()" -->
+</head>
+
+<body onload="initMenu();initHousing();getCookie()" onunload="setCookie()">
+    <div id="container">
+        <div id="header">
+            <a href="../index.htm"><img src="../graphics/logo.png" alt="Aren Software's Logo" border="0" width="100" height="36" class="img.logo"></a>
+            <form class="form_menu" name="frmMenu" id="frmMenu" action="">
+                <select name="selectMenu" onchange="setMenu()">
+                <option selected="selected">Kenya</option>
+                <option>Uganda</option>
+                <option>Tanzania</option>
+             </select>
+            </form>
+        </div>
+        <div id="nav">
+            <div class="topnav" id="myTopnav">
+                <div class="dropdown">
+                    <button class="dropbtn">Software <i class="fa fa-caret-down"></i> </button>
+                    <div class="dropdown-content"> <a href="../payroll/payroll.htm">Aren Payroll</a> <a href="../payroll/register.htm">Aren Register</a> <a href="../payroll/features.htm">Product Comparison</a> <a href="../payroll/prices.htm">Prices</a> <a href="../payroll/whatsnew90.htm">What's New</a>                        </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Downloads <i class="fa fa-caret-down"></i> </button>
+                    <div class="dropdown-content"> <a href="../payroll/download90.htm">Downloads</a><a href="../payroll/upgrade80.htm">Upgrades</a> </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Services <i class="fa fa-caret-down"></i> </button>
+                    <div class="dropdown-content"> <a href="../payroll/bureau.htm">Bureau Service</a> </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Calculators <i class="fa fa-caret-down"></i> </button>
+                    <div class="dropdown-content"> <a href="deducalc.htm">Net Pay </a> <a href="grosscalc.htm">Gross Pay</a> <a href="payecalc.htm">PAYE</a> <a href="loancalc.htm">Loan Repayment</a> <a href="../investments/tbills.htm">Investments</a> </div>
+                </div>
+                <a href="../payroll/taxrates.htm">Tax Rates</a>
+                <div class="dropdown">
+                    <button class="dropbtn">About Us <i class="fa fa-caret-down"></i> </button>
+                    <div class="dropdown-content"> <a href="../company/about.htm">About Us</a> <a href="../company/contacts.htm">Contact Us</a> <a href="../company/clients.php">Clients</a> </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Feedback <i class="fa fa-caret-down"></i> </button>
+                    <div class="dropdown-content"> <a href="../feedback/emailform.php">Email Us</a> <a href="../feedback/quoteform.php">Request a Quote</a> <a href="../feedback/demoform.php">Book a Demo</a></div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a> </div>
+        </div>
+        <div id="text">
+            <!-- InstanceBeginEditable name="Content" -->
+            <p>Jul 2023-Jun 2024 | <a href="../calculators 2023/deducalc.htm">Jan-Jun 2023</a></p>
+            <form name="frmNetPay" id="frmNetPay" method="post" action="deducalc.php" onsubmit="return validateNetPay()">
+                <table align="center" cellpadding="5" cellspacing="0" rules="none" class="calculator">
+                    <tbody>
+                        <tr>
+                            <th height="40" colspan="3" valign="top"> NET PAY CALCULATOR<br> Jul 2023-Jun 2024
+                            </th>
+                        </tr>
+                        <tr>
+                            <td align="right">Gross Pay</td>
+                            <td align="right"><input name="txtGrossPay" type="text" class="numField" id="txtGrossPay" size="12" maxlength="10"></td>
+                            <td><input name="button2" type="submit" id="button" value="Calculate"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Non-Cash Benefits </td>
+                            <td align="right"><input name="txtBenefits" type="text" class="numField" id="txtBenefits" value="0" size="12" maxlength="10"></td>
+                            <td><input name="reset" type="reset" value="Clear All"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Pension Contribution<br></td>
+                            <td align="right"><input name="txtPension" type="text" class="numField" id="txtPension" value="0" size="12" maxlength="10"></td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td align="right">Other Allowable Deductions<br></td>
+                            <td align="right"><input name="txtAllowable" type="text" class="numField" value="0" size="12" maxlength="10"></td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr class="separator">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Housed by Employer<br></td>
+                            <td align="left"><input name="chkHoused" type="checkbox" onclick="updateHousing()" value="1" id="chkHoused"></td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr id="rowHseType" style="display: none;">
+                            <td align="right">Type of Housing<br></td>
+                            <td align="left"><select name="selHseType" id="selHseType">
+                         <option value="1" selected="">Ordinary</option>
+                         <option value="2">Farm</option>
+                      </select></td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr id="rowHseValue" style="display: none;">
+                            <td align="right">Value of Housing </td>
+                            <td align="right"><input name="txtHseValue" type="text" class="numField" value="0" size="12" maxlength="10" id="txtHseValue"></td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr id="rowRent" style="display: none;">
+                            <td align="right">Rent to Employer<br></td>
+                            <td align="right"><input name="txtRent" type="text" class="numField" value="0" size="12" maxlength="10" id="txtRent"></td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr class="separator">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right">Ignore Non-Cash Benefits up to Ksh 3,000 </td>
+                            <td align="left"><input name="chkIgnoreBenefits" type="checkbox" id="chkIgnoreBenefits" value="1" checked="checked"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right">Use new NSSF Tiers</td>
+                            <td align="left"><input name="chkUse2024Tiers" type="checkbox" id="chkUse2024Tiers" value="1" checked="checked"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right">Deduct Tier II NSSF</td>
+                            <td align="left"><input name="chkDeductTier2" type="checkbox" id="chkDeductTier2" value="1" checked="checked"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right">Deduct Housing Levy</td>
+                            <td align="left"><input name="chkDeductAHL" type="checkbox" onclick="updateAHLRelief()" id="chkDeductAHL" value="1" checked="checked"></td>
+                        </tr>
+                        <tr id="rowAHLRelief" style="display: table-row;">
+                            <td colspan="2" align="right">Allow Relief on Housing Levy</td>
+                            <td align="left"><input name="chkAHLRelief" type="checkbox" id="chkAHLRelief" value="1" checked="checked"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <p>This calculator works out an employee's net pay by subtracting PAYE, NSSF, NHIF, housing levy and pension fund contribution from the monthly gross pay. In order to work out taxable pay, the calculator requires non-cash benefits and any allowable
+                deductions other than NSSF and pension fund contribution. </p>
+            <!-- InstanceEndEditable -->
+        </div>
+        <div id="footer">
+            <div class="section group">
+                <div class="col span_1_of_3"> Copyright ©
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>2024 Aren Software Ltd </div>
+                <div class="col span_1_of_3">Titan Complex, Chaka Road, Nairobi<br> 0722 861553, 0733&nbsp;861553 </div>
+                <div class="col span_1_of_3">
+                    <!-- InstanceBeginEditable name="LastModified" -->Last Updated: 1 April 2024
+                    <!-- InstanceEndEditable -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<!-- InstanceEnd -->
+
+</html>

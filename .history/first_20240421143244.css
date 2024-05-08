@@ -1,0 +1,170 @@
+    body {
+    font-family: Roboto Slab;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(238, 231, 237);
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: rgb(27, 27, 27);
+    font-family: Roboto plus;
+    text-decoration: none;
+    float: right;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.h1 {
+    color: white;
+    font-size: 50px;
+}
+
+span {
+    color: rgb(23, 235, 225);
+    ;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.cont1,
+.cont2 {
+    flex: 2;
+}
+
+.centered {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-wrap: wrap;
+}
+
+.cont1 img {
+    width: 450px;
+    height: 450px;
+}
+
+span2 {
+    color: rgb(23, 235, 225);
+}
+
+span3 {
+    color: rgb(115, 255, 0);
+    font-size: 35px;
+}
+
+span4 {
+    color: c;
+}
+
+h2 {
+    color: white;
+}
+
+.contact {
+    margin-left: 40%;
+    font-size: 20px;
+    color: rgb(115, 255, 0);
+}
+
+.languages {
+    color: rgb(115, 255, 0);
+    font-size: 20px;
+}
+
+.education {
+    color: rgb(115, 255, 0);
+    font-size: 30px;
+}
+
+
+/* new css */
+
+.hello {
+    color: white;
+    font-size: 30px;
+}
+
+.my-profession {
+    color: white;
+    font-size: 30px
+}
+
+.paragraph {
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    background: rgb(2, 2, 2);
+}
+
+.section {
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    padding: 0 30px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-info {
+    flex: 1;
+    padding-right: 20px;
+    /* Adjust as needed */
+}
+
+.home-img img {
+    max-height: 500px;
+    width: 350px;
+    /* Adjust the height as needed */
+}
+
+h3.hello span {
+    font-family: 'Clicker Script', cursive;
+    color: rgb(212, 10, 135);
+    font-weight: 700;
+}
+
+.hire-me {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 35px;
+    background-color: rgb(212, 10, 135);
+    text-decoration: none;
+    border-radius: 40px;
+    color: white;
+    /* display: inline-block;
+}

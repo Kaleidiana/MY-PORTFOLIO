@@ -1,0 +1,108 @@
+body {
+    font-family: Roboto Slab;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(238, 231, 237);
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: rgb(27, 27, 27);
+    font-family: Roboto plus;
+    text-decoration: none;
+    float: right;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.h1 {
+    color: white;
+    font-size: 50px;
+}
+
+span {
+    color: rgb(23, 235, 225);
+    ;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.cont1,
+.cont2 {
+    flex: 2;
+}
+
+.centered {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-wrap: wrap;
+}
+
+.cont1 img {
+    width: 450px;
+    height: 450px;
+}
+
+span2 {
+    color: rgb(23, 235, 225);
+}
+
+span3 {
+    color: rgb(115, 255, 0);
+    font-size: 35px;
+}
+
+span4 {
+    color: c;
+}
+
+h2 {
+    color: white;
+}
+
+.contact {
+    margin-left: 40%;
+    font-size: 20px;
+    color: rgb(115, 255, 0);
+}
+
+.languages {
+    color: rgb(115, 255, 0);
+    font-size: 20px;
+}
+
+.education {
+    color: rgb(115, 255, 0);
+    font-size: 30px;
+}
+
+
+/* new css */
+
+.hello {
+    color: white;
+}
+
+.my-profession {
+    color: white;
+}
+
+.paragraph {
+    color: white;
+}
+
+.about-info

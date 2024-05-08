@@ -1,0 +1,191 @@
+    body {
+        font-family: Roboto Slab;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(238, 231, 237);
+        flex-wrap: wrap;
+    }
+    
+    .header {
+        color: white;
+    }
+    
+    .nav a {
+        color: rgb(27, 27, 27);
+        font-family: Roboto plus;
+        text-decoration: none;
+        float: right;
+        font-size: 20px;
+        padding: 25px;
+    }
+    
+    .h1 {
+        color: white;
+        font-size: 50px;
+    }
+    
+    span {
+        color: rgb(23, 235, 225);
+        ;
+    }
+    
+    span4 {
+        color: rgb(247, 5, 214);
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    .send {
+        color: rgb(247, 5, 214);
+        margin-left: 40%;
+    }
+    
+    .responsive {
+        margin-left: 35%;
+    }
+    
+    .qtns {
+        align-items: center;
+    }
+    
+    .phone {
+        color: white;
+        font-size: 20px;
+    }
+    
+    h2 {
+        color: white;
+    }
+    /* new css */
+    
+    .hello {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .my-profession {
+        color: white;
+        font-size: 30px
+    }
+    
+    .paragraph {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .container {
+        max-width: 1100px;
+        width: 100%;
+        background: rgb(2, 2, 2);
+    }
+    
+    .section {
+        min-height: 100vh;
+        display: block;
+        position: fixed;
+        left: 270px;
+        padding: 0 30px;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        opacity: 1;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        position: relative;
+    }
+    
+    .about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about-info {
+        flex: 1;
+        padding-right: 20px;
+        /* Adjust as needed */
+    }
+    
+    .home-img img {
+        max-height: 500px;
+        width: 350px;
+        border-radius: 5px;
+        /* Adjust the height as needed */
+    }
+    
+    h3.hello span {
+        font-family: 'Clicker Script', cursive;
+        color: rgb(212, 10, 135);
+        font-weight: 700;
+        font-size: 40px;
+    }
+    
+    .hire-me {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 35px;
+        background-color: rgb(212, 10, 135);
+        text-decoration: none;
+        border-radius: 40px;
+        color: white;
+        display: inline-block;
+        white-space: nowrap;
+        border: none;
+        transition: all 0.3s ease;
+    }
+    
+    .hire-me:hover {
+        transform: scale(1.05);
+    }
+    
+    button {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    label,
+    input,
+    textarea,
+    button {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+        border: none;
+        tex
+    }
+    
+    form {
+        max-width: 450px;
+        margin: 0 auto;
+        color: white;
+    }
