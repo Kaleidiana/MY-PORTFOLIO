@@ -291,7 +291,16 @@
                                 .card {
                                     background-color: grey;
                                     padding: 5px;
+                                }
+                                .card1 {
+                                    background-color: grey;
+                                    width: 100%;
+                                    padding: 20px;
+                                }
                                     /* }form */
                                     #note-form {
                                         background-color: white;
+                                    }
+                                    .navbar{
+                                        width: 400%;
                                     }
