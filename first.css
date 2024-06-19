@@ -5,10 +5,15 @@
                                     background-color: black;
                                 }
                                 
+                                /* #navbar
+                                {
+                                    background: #333;
+                                } */
                                 .nav {
                                     background-color: #333;
                                     overflow: hidden;
                                     font-size: 20px;
+                                    
                                 }
                                 
                                 .nav a {
@@ -268,7 +273,7 @@
                                 }
                                 
                                 .education {
-                                    color: rgb(12, 245, 4);
+                                    color: rgb(245, 16, 207);
                                     font-size: 30px;
                                     font-family: Verdana, Geneva, Tahoma, sans-serif;
                                 }
