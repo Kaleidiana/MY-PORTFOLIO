@@ -295,13 +295,27 @@
                                 
                                 .card {
                                     background-color: grey;
-                                    padding: 5px;
+                                    padding: 6px;
+
+                                }
+                                .card3{
+                                    background-color: grey;
+                                    padding: 6px;
                                 }
                                 .card1 {
                                     background-color: grey;
-                                    width: 100%;
-                                    padding: 20px;
+                                    padding: 10px;
+                                    width: 100%; /* Make the footer span the entire width */
+                                    box-sizing: border-box; /* Ensure padding is included in width calculation */
+                                    position: fixed; /* Fixed position to stick it at the bottom */
+                                    bottom: 0; /* Align at the bottom of the viewport */
+                                    left: 0; /*Start from the left edge of the viewport */
+                                    margin-bottom: 0%;
                                 }
+
+
+                                
+
                                     /* }form */
                                     #note-form {
                                         background-color: white;
