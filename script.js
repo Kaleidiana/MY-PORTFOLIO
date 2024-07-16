@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const navItems = [
         
-        { href: 'home.html', text: 'Home' },
+        { href: 'index.html', text: 'Home' },
         { href: 'about.html', text: 'About' },
         { href: 'services.html', text: 'Services' },
         { href: 'contact.html', text: 'Contact' },
