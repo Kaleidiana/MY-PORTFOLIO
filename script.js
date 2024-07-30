@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
         { href: 'index.html', text: 'Home' },
         { href: 'about.html', text: 'About' },
         { href: 'services.html', text: 'Services' },
-        { href: 'contact.html', text: 'Contact' },
         { href: 'work.html', text: 'Work'},
+        { href: 'contact.html', text: 'Contact' },
+        
         
     ];
 
